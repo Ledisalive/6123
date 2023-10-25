@@ -1,11 +1,110 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl-PL">
 <html>
 <head>
  <meta charset="utf-8">
- <title> </title>
+ <title> ZADANIE FORMULARZ </title>
 </head>
 <body>
-<A HREF=file:///C:/Users/uczen/Desktop/index%20(2).html> Wróć </A> <br>
+    <body bgcolor="#6f6f6f">
+        <center><h1> Formularz zamówień</h1></center>
+    <form enctype="text/plain" action="mailto:zelewski0912@gmail.com" subject="formularz_dane" method="Post">
+
+        <TABLE>
+
+        <TR height="100" width="800">
+        <TD width="850"><b>Podaj imię:</b> <input name="imie" size="22"></TD>
+        <td><b>Chcesz otrzymać wiadomości na temat nowych prodóktów?</b><br>
+            <input type="radio" name="tak1" value="tak"> Tak
+            <input type="radio" name="nie1" value="nie"> Nie
+        </td>
+        
+        </TR>
+
+        <TR>
+        <TD height="100"><b>Podaj nazwisko:</b> <input name="nazwisko" size="22"></TD>
+        <TD></TD>
+        </TR>
+
+        <TR>
+        <TD height="100"><b>Podaj adres E-mail:</b> <input name="email" size="22"> </TD>
+        
+        </TR>
+
+        <TR>
+            <TD><b>Podaj województwo:</b>
+                <select>
+                <option vaule="podajwojewództwo">-Podaj województwo-</option>
+                <option value="pomorskie">pomorskie</option>
+                <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                <option value="zachodnio-pomorskie">zachodnio-pomorskie</option>
+                <option value="mazowieckie">mazowieckie</option>
+                <option value="małopolskie">małopolskie</option>
+                <option value="wielkopolskie">wielkopolskie</option>
+                <option value="lubuskie">lubuskie</option>
+                <option value="lubelskie">lubelskie</option>
+                <option value="podkarpackie">podkarpackie</option>
+                <option value="śląskie">śląskie</option>
+                <option value="dolno-śląskie">dolno-śląskie</option>
+                <option value="świętokrzyskie">świętokrzyskie</option>
+                <option value="łódzkie">łódzkie</option>
+                <option value="podlaskie">podlaskie</option>
+                <option value="opolskie">opolskie</option>
+                <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+                </select></TD>
+                <td><b>Chcesz otrzymać fakturę?</b><br>
+                    <input type="radio" name="Tak2" value="t"> Tak
+                    <input type="radio" name="Nie2" value="n"> Nie
+                    <input type="checkbox" name="takae" value="tae"> Tak, ale elektroniczną
+                </td>
+        </TR>
+        <tr>
+            <td height="200"><b>podaj miasto:</b><input name="miasto" size="22"><br><br>
+
+            <b>podaj ulice: <input name="ulica" size="22"></b><br><br>
+       
+            <b>Podaj nr:</b> <input name="nr" size="10"></td>
+
+            <TD width="450"><b> W polu poniżej,
+                wpisz instrukcje dla nadawcy:</b> 
+                <textarea cols="50" rows="4"></textarea></TD>
+        </tr>
+
+        <tr>
+            <TD width="450" ><b>Podaj nr. telefonu:</b><input name="telefon" size="12"</TD>
+        </tr>
+
+        <tr>
+            <TD><b>Podaj metode wysyłki:</b> 
+                <select>
+                    <option vaule="metodawysyłki">-Metoda wysyłki-</option>
+                    <option vaule="Adres">Do adresu</option>
+                    <option vaule="Paczkomat">Do Paczkomaty</option>
+                    <option vaule="Sklep">Do sklepu</option>
+                    <option vaule="osobisty">Odbiór osobisty</option>
+                </select></TD>
+        </tr>
+
+        <tr>
+            <TD><b>Podaj metode płatności:</b>
+                <select>
+                    <option vaule="metodapłatnosci">-Metoda płatności-</option>
+                    <option vaule="Przelew">Przelew</option>
+                    <option vaule="kredytowa">Karta kredytowa</option>
+                    <option vaule="debetowa">Karta debetowa</option>
+                    <option vaule="PayPal">PayPal</option>
+                    <option vaule="BLIK">Blik</option>
+                    <option vaule="zapłata">Zapłata przy odbiorze</option>
+                </select></TD>
+                <TD> <nobr><input type="reset" value="Reset" style="height:160px; width:300px">
+                    <nobr><input type="submit" value="Zamów" style="height:160px; width:300px">  
+                </TD>
+        </tr>
+
+        </TABLE>
+        </form>
+
+
+<A HREF="index.html"> Wróć </A> <br>
  </body>
 </html>
